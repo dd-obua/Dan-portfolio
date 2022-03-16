@@ -5,11 +5,11 @@
 }
 
 body {
-  font-family: Inter;
+  font-family: Inter, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background: #e5e5e5;
 }
 
-article {
+#sketch {
   width: 375px;
   margin: 0 auto;
   background: #fff;
@@ -75,6 +75,7 @@ p#welcome {
 #social {
   padding-bottom: 22px;
 }
+
 #social ul {
   display: flex;
   justify-content: space-between;
