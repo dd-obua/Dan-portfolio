@@ -4,7 +4,7 @@
 
 # Set up and mobile skeleton
 
-> This is my portfolio, see how good a software engineer/developer I am.
+> This project is the first part of my portfolio website. More will be added later.
 
 ## Built With
 
@@ -14,7 +14,7 @@
 
 **This is the first part of the mobile version of my portfolio website.**
 
-👤 **Author1**
+👤 **Obua Denis Daniel**
 
 - GitHub: [@githubhandle](https://github.com/dd-obua/)
 - Twitter: [@twitterhandle](https://twitter.com/DenisDanielObu1)
