@@ -1,3 +1,4 @@
+/* styles for the skeleton project begins here */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -98,3 +99,6 @@ li {
   border-radius: 50%;
   border: 1px solid #acb7c3;
 }
+
+/* styles for the mobile version project begins here */
+
