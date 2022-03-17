@@ -9,7 +9,7 @@ body {
   background: #e5e5e5;
 }
 
-#sketch {
+#skeleton {
   width: 375px;
   margin: 0 auto;
   background: #fff;
@@ -76,7 +76,7 @@ p#welcome {
   padding-bottom: 22px;
 }
 
-#social ul {
+.social ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
