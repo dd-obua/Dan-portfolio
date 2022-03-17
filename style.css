@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: #e5e5e5;
+}
+
+#skeleton {
+  width: 375px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 28px;
+  padding-top: 27px;
+}
+
+#welcome a {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #28352f;
+  text-decoration: none;
+}
+
+#menu {
+  width: 16px;
+  height: 10px;
+}
+
+#page {
+  background-image: url("/images/skeleton.svg");
+  background-repeat: no-repeat;
+}
+
+.intro {
+  margin: 0 24px;
+  text-align: center;
+  font-weight: 700;
+  padding-top: 74px;
+  margin-bottom: 25px;
+  line-height: 52px;
+}
+
+#denis {
+  color: #172b4d;
+  font-size: 40px;
+}
+
+#trade {
+  color: #36b37e;
+  font-size: 40px;
+}
+
+#advert {
+  margin: 0 24px;
+  padding-bottom: 60px;
+}
+
+#advert p {
+  color: #172b4d;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+#social {
+  padding-bottom: 22px;
+}
+
+.social ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 102px;
+  padding-bottom: 64px;
+}
+
+li {
+  list-style: none;
+}
+
+#union {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid #acb7c3;
+}
