@@ -238,8 +238,10 @@ a.btn {
 
 /* about me */
 .bg-img {
-  background: url("./images/bg-img-1.svg") top right no-repeat,
-    url("./images/bg-img-2.svg") bottom left no-repeat, #fff;
+  background:
+    url("./images/bg-img-1.svg") top right no-repeat,
+    url("./images/bg-img-2.svg") bottom left no-repeat,
+    #fff;
 }
 
 .about-me {
