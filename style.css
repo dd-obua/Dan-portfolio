@@ -198,16 +198,32 @@ a.btn {
 }
 
 /* about me */
+.bg-img {
+  background: url("./images/bg-img-1.svg") top right no-repeat,
+    url("./images/bg-img-2.svg") bottom left no-repeat, #fff;
+}
+
 .about-me {
   width: 375px;
-  background: #fff;
-  padding-top: 68px;
+  height: 382px;
+  padding-top: 55px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 69px;
 }
 
+.bg-img-1 {
+  background-image: url("./images/bg-img-1.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.bg-img-2 {
+  background-image: url("./images/bg-img-2.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
 .about-me h2 {
   width: 100%;
   color: #172b4d;
@@ -226,7 +242,7 @@ a.btn {
   margin-bottom: 24px;
 }
 
-#resume a {
+.resume a {
   color: #fff;
   font-weight: 500;
   font-size: 17px;
@@ -246,6 +262,7 @@ a.btn {
 }
 
 .vital {
+  padding-top: 59px;
   padding-bottom: 60px;
 }
 
