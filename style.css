@@ -205,9 +205,7 @@ li {
 }
 
 .content ul {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 11px 29px 11px;
+  margin: 0 auto;
 }
 
 .content li {
@@ -217,12 +215,12 @@ li {
   font-size: 12px;
   line-height: 16px;
   padding: 8px 12px;
+  float: left;
 }
 
 .btn {
-  display: flex;
-  justify-content: center;
   margin-bottom: 100px;
+  display: block;
 }
 
 a.btn {
@@ -238,10 +236,8 @@ a.btn {
 
 /* about me */
 .bg-img {
-  background:
-    url("./images/bg-img-1.svg") top right no-repeat,
-    url("./images/bg-img-2.svg") bottom left no-repeat,
-    #fff;
+  background: url("./images/bg-img-1.svg") top right no-repeat,
+    url("./images/bg-img-2.svg") bottom left no-repeat, #fff;
 }
 
 .about-me {
