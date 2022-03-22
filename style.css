@@ -400,3 +400,13 @@ form button {
   width: 129px;
   margin: 0 auto;
 }
+
+form button:hover {
+  cursor: pointer;
+  background: #36b37f;
+}
+
+form button:active {
+  cursor: pointer;
+  background: #008552;
+}
