@@ -340,15 +340,16 @@ footer {
   width: 375px;
   background-color: #fff;
   margin: 0 auto;
-  /* background-image: url("./images/illustration-contact-form.svg"); */
-  background-repeat: no-repeat;
+  margin-bottom: 10px;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 24px;
+  background-image: url("./images/illustration-contact-form.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 form h3 {
@@ -368,13 +369,8 @@ form input {
   display: inline-block;
   width: 327px;
   padding: 16px;
-}
-
-form input::-webkit-input-placeholder {
-  color: #6b778c;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
 }
 
 form textarea {
@@ -382,6 +378,15 @@ form textarea {
   height: 114px;
   padding: 12px;
   color: #091e42;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+}
+
+form input::-webkit-input-placeholder {
+  color: #6b778c;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -399,6 +404,7 @@ form button {
   display: block;
   width: 129px;
   margin: 0 auto;
+  margin-bottom: 44px;
 }
 
 form button:hover {
@@ -409,4 +415,38 @@ form button:hover {
 form button:active {
   cursor: pointer;
   background: #008552;
+}
+
+.footer-social ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social ul li {
+  margin: 10px;
+}
+
+.email {
+  margin-top: 24px;
+}
+
+footer p {
+  color: #42526e;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 330px;
+}
+
+.bar {
+  width: 150px;
+  border-bottom: 10px solid rgb(36, 35, 35);
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.space {
+  height: 10px;
 }
