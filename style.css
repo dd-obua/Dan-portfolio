@@ -238,10 +238,8 @@ a.btn {
 
 /* about me */
 .bg-img {
-  background:
-    url("./images/bg-img-1.svg") top right no-repeat,
-    url("./images/bg-img-2.svg") bottom left no-repeat,
-    #fff;
+  background: url("./images/bg-img-1.svg") top right no-repeat,
+    url("./images/bg-img-2.svg") bottom left no-repeat, #fff;
 }
 
 .about-me {
@@ -334,4 +332,15 @@ a.btn {
 .skills .ul-2 {
   margin: auto 125px;
   margin-bottom: 24px;
+}
+
+/* Styles for footer */
+
+footer {
+  width: 375px;
+  background-color: #fff;
+  margin: 0 auto;
+
+  background-image: url("./images/illustration-contact-form.svg");
+  background-repeat: no-repeat;
 }
