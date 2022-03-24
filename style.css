@@ -512,4 +512,30 @@ body a {
 	.trade {
 		color: #36b37e;
 	}
+
+	.advert {
+		width: 900px;
+		margin: 0 auto;
+		margin-bottom: 34px;
+	}
+
+	.advert p {
+		text-align: center;
+		color: #172b4d;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28px;
+		text-align: center;
+	}
+
+	.social ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 64px;
+	}
+
+	.social ul li {
+		margin: 10px;
+	}
 }
