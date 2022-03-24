@@ -4,7 +4,14 @@
 	margin: 0;
 }
 
-a {
+body {
+	font-family: Inter, sans-serif;
+}
+
+body li {
+	list-style: none;
+}
+body a {
 	text-decoration: none;
 }
 
@@ -474,5 +481,35 @@ a {
 
 	.desktop {
 		display: block;
+	}
+
+	.desktop ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 72px;
+	}
+
+	.desktop a {
+		margin: 0 10px;
+		color: #28352f;
+		font-weight: 500;
+		font-size: 18px;
+	}
+
+	.intro {
+		text-align: center;
+		font-weight: 800;
+		font-size: 32px;
+		margin-top: 160px;
+		margin-bottom: 24px;
+	}
+
+	.denis {
+		color: #172b4d;
+	}
+
+	.trade {
+		color: #36b37e;
 	}
 }
