@@ -26,35 +26,6 @@ body a {
 	border: 1px solid #acb7c3;
 }
 
-.story {
-	width: 369px;
-	height: 474px;
-	border-radius: 8px;
-	background: #ebf0ee;
-}
-
-.story .content ul {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 29px;
-}
-
-.story .content li {
-	background: #ebf0ee;
-	border-radius: 4px;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 16px;
-	padding: 8px 12px;
-	margin: 0 4px;
-}
-
-.btn {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 100px;
-}
-
 .story .empty {
 	height: 252px;
 }
@@ -79,7 +50,13 @@ body a {
 	color: #3a4a42;
 }
 
-.story .content .resume a {
+.resume {
+	display: block;
+	width: 159px;
+	margin: 0 auto;
+}
+
+.resume a {
 	color: #fff;
 	font-weight: 500;
 	font-size: 17px;
@@ -174,12 +151,42 @@ body a {
 		padding-bottom: 60px;
 	}
 
-	.about-me p {
+	.about-me {
+		width: 100%;
+		height: 382px;
+		padding-top: 55px;
+		padding-bottom: 69px;
+		padding: 0 24px;
+	}
+
+	.about-me h2 {
 		text-align: center;
-		margin: 0 12px;
+		color: #172b4d;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 52px;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 24px;
+	}
+
+	.about-me h2 {
+		text-align: center;
+		color: #172b4d;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 52px;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 24px;
+	}
+
+	.about-me p {
+		color: #42526e;
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 32px;
+		text-align: center;
 		margin-bottom: 24px;
 	}
 
@@ -236,13 +243,27 @@ body a {
 		display: grid;
 	}
 
-	.about-me h2 {
-		width: 100%;
-		color: #172b4d;
-		font-weight: 700;
-		font-size: 40px;
-		line-height: 52px;
-		margin-bottom: 24px;
+	.story {
+		width: 327px;
+		height: 474px;
+		margin: 0 auto 24px auto;
+		border-radius: 8px;
+		background: #ebf0ee;
+	}
+
+	.story .content ul {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 11px 29px 11px;
+	}
+
+	.story .content li {
+		background: #ebf0ee;
+		border-radius: 4px;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 16px;
+		padding: 8px 12px;
 	}
 
 	.btn {
@@ -255,16 +276,6 @@ body a {
 	.bg-img {
 		background: url("./images/bg-img-1.svg") top right no-repeat,
 			url("./images/bg-img-2.svg") bottom left no-repeat, #fff;
-	}
-
-	.about-me {
-		width: 375px;
-		height: 382px;
-		padding-top: 55px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-bottom: 69px;
 	}
 
 	.about {
@@ -554,6 +565,9 @@ body a {
 		display: none;
 	}
 
+	.recent-works {
+	}
+
 	.recent-works h1 {
 		color: #172b4d;
 		font-weight: 700;
@@ -570,4 +584,58 @@ body a {
 		place-items: center;
 		margin: 52px auto 192px auto;
 	}
+
+	.story {
+		width: 369px;
+		height: 474px;
+		border-radius: 8px;
+		background: #ebf0ee;
+	}
+
+	.story .content ul {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 29px;
+	}
+
+	.story .content li {
+		background: #ebf0ee;
+		border-radius: 4px;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 16px;
+		padding: 8px 12px;
+		margin: 0 4px;
+	}
+
+	.btn {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 100px;
+	}
+	.about-me {
+		margin: 0 260px;
+	}
+
+	.about-me h2 {
+		text-align: center;
+		color: #172b4d;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 52px;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 24px;
+	}
+
+	.about-me p {
+		color: #42526e;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 32px;
+		text-align: center;
+		margin-bottom: 24px;
+	}
+
+
 }
