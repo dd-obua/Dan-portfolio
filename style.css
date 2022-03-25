@@ -25,6 +25,10 @@ section {
 	align-items: center;
 }
 
+.header-desktop {
+	display: none;
+}
+
 a {
 	text-decoration: none;
 }
