@@ -17,6 +17,8 @@ body a {
   text-decoration: none;
 }
 
+
+
 .union {
   display: flex;
   justify-content: center;
@@ -679,4 +681,18 @@ form input::-webkit-input-placeholder {
   form button {
     margin: 0;
   }
+}
+
+input, 
+textarea {
+  transition: all 0.3s;
+}
+
+input:hover, 
+textarea:hover {
+  transform: translateX(3px);
+}
+
+input:active, textarea:active {
+  transform: scale(1.01);
 }
