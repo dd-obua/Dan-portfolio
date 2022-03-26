@@ -9,6 +9,11 @@ body {
 	font-family: Inter, sans-serif;
 }
 
+.logo:hover {
+	transition: all 2s;
+	transform: rotate(360deg);
+}
+
 img {
 	transition: all 0.8s;
 }
@@ -87,6 +92,10 @@ body a {
 
 .strength li a {
 	color: #36b37e;
+}
+
+.strength li a:hover {
+	color: #fff;
 }
 
 .story .content a {
@@ -175,6 +184,11 @@ body a {
 	font-size: 12px;
 	line-height: 16px;
 	margin: 0 4px;
+}
+
+.strength li:hover {
+	background: #a3cabc;
+	border: 1px solid #fff;
 }
 
 .strength .ul-1 {
