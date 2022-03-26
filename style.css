@@ -94,12 +94,12 @@ body a {
 	color: #36b37e;
 }
 
-.strength li a:hover {
-	color: #fff;
-}
-
 .story .content a {
 	color: #3a4a42;
+}
+
+.strength li a:hover {
+	color: #fff;
 }
 
 .resume {
@@ -186,6 +186,14 @@ body a {
 	margin: 0 4px;
 }
 
+.footer form li {
+	margin-bottom: 24px;
+}
+
+.footer-social ul li {
+	margin: 10px;
+}
+
 .strength li:hover {
 	background: #a3cabc;
 	border: 1px solid #fff;
@@ -199,8 +207,9 @@ body a {
 	margin-bottom: 24px;
 }
 
-.footer form li {
-	margin-bottom: 24px;
+input,
+textarea {
+	transition: all 0.3s;
 }
 
 form input {
@@ -253,10 +262,6 @@ form button:active {
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-}
-
-.footer-social ul li {
-	margin: 10px;
 }
 
 /* styles for mobile version */
@@ -710,11 +715,6 @@ form input::-webkit-input-placeholder {
 	form button {
 		margin: 0;
 	}
-}
-
-input,
-textarea {
-	transition: all 0.3s;
 }
 
 input:hover,
