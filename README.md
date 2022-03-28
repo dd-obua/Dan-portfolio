@@ -4,7 +4,11 @@
 
 # Set up and mobile skeleton
 
-> This project is the first part of my portfolio website. More will be added later.
+> In this project, I deploy my portfolio website. 
+
+[Here is the screenshot](./images/sceen-capture.png)
+
+Click [here]() to access.
 
 ## Built With
 
