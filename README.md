@@ -2,17 +2,19 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Set up and mobile skeleton
+# Portfolio: Application Deploy
 
 > In this project, I deploy my portfolio website.
 
 ![](./images/sceen-capture.png)
 
-Click [here](https://dd-obua.github.io/Dan-portfolio/) to access.
-
 ## Built With
 
 - HTML & CSS
+
+## Live Demo
+
+[Live demo](https://dd-obua.github.io/Dan-portfolio/)
 
 ## Getting Started
 
