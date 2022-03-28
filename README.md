@@ -4,9 +4,9 @@
 
 # Set up and mobile skeleton
 
-> In this project, I deploy my portfolio website. 
+> In this project, I deploy my portfolio website.
 
-[Here is the screenshot](./images/sceen-capture.png)
+![](./images/sceen-capture.png)
 
 Click [here]() to access.
 
