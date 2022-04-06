@@ -6,6 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Dan's Portfolio</title>
 		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 	</head>
 	<body>
 		<!-- mobile skeleton starts here -->
@@ -15,15 +22,24 @@
 					<a href="#" class="logo">
 						<img src="./images/Welcome.svg" alt="Welcome" />
 					</a>
-					<a href="#" class="menu">
-						<img src="./images/menu.svg" alt="Drop down menu" />
-					</a>
+					<ul class="mobile-icons">
+						<li><i class="fa fa-bars fa-xl hamburger"></i></li>
+						<li><i class="fa fa-xmark fa-solid fa-xl close"></i></li>
+					</ul>
 				</div>
+				<!-- mobile menu -->
+				<ul class="options hide-desktop">
+					<li>
+						<a href="#portfolio" id="portfolio-link" class="option">Portfolio</a>
+					</li>
+					<li><a href="#about" id="about-link" class="option">About</a></li>
+					<li><a href="#contact" id="contact-link" class="option">Contact</a></li>
+				</ul>
 				<div class="desktop">
 					<ul>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -82,7 +98,7 @@
 			</section>
 
 			<!-- mobile version starts here -->
-			<section class="recent-works">
+			<section class="recent-works" id="portfolio">
 				<h1>My Recent Works</h1>
 				<div class="seperator">
 					<img src="./images/indicator.svg" alt="" />
@@ -212,7 +228,7 @@
 			</section>
 
 			<!-- about me -->
-			<section class="about-me">
+			<section class="about-me" id="about">
 				<div>
 					<h2>About me</h2>
 				</div>
@@ -280,7 +296,7 @@
 				</div>
 			</div>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="contact">
 			<div class="h3-form">
 				<h3 class="text">
 					I'm always interested in hearing about new projects, so if you'd like
@@ -353,5 +369,7 @@
 			<div class="bar"></div>
 			<div class="space"></div>
 		</footer>
+
+		<script src="main.js"></script>
 	</body>
 </html>
