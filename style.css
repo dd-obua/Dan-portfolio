@@ -308,7 +308,6 @@ section {
   line-height: 44px;
   height: 100vh;
   z-index: 99;
-
   background: #fff;
 }
 
@@ -360,8 +359,7 @@ main {
   height: 382px;
   padding-top: 55px;
   padding-bottom: 69px;
-  background: url('./images/bg-img-1.svg') top right no-repeat,
-    url('./images/bg-img-2.svg') bottom left no-repeat, #fff;
+  background: url('./images/bg-img-1.svg') top right no-repeat, url('./images/bg-img-2.svg') bottom left no-repeat, #fff;
 }
 
 .about-me p {
@@ -673,8 +671,7 @@ form input::-webkit-input-placeholder {
   }
 
   .about-me {
-    background: url('./images/bg-desktop-1.svg') right top no-repeat,
-      url('./images/bg-desktop-2.svg') left bottom no-repeat;
+    background: url('./images/bg-desktop-1.svg') right top no-repeat, url('./images/bg-desktop-2.svg') left bottom no-repeat;
     padding-top: 120px;
   }
 
@@ -715,9 +712,7 @@ form input::-webkit-input-placeholder {
     display: flex;
     justify-content: center;
     padding-bottom: 225px;
-    background: url('./images/footer-left.svg') left bottom no-repeat,
-      url('./images/footer-middle.svg') 20% 80% no-repeat,
-      url('./images/footer-right.svg') right bottom no-repeat;
+    background: url('./images/footer-left.svg') left bottom no-repeat, url('./images/footer-middle.svg') 20% 80% no-repeat, url('./images/footer-right.svg') right bottom no-repeat;
   }
 
   .h3-form .text {
