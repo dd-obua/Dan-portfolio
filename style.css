@@ -283,13 +283,24 @@ section {
 
 .mobile-icons {
 	display: flex;
+	flex-basis: 375px;
 	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.close {
+	padding: 15px 0;
 }
 
 .options {
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 44px;
+	height: 100vh;
+}
+
+.options li {
+	margin-bottom: 20px;
 }
 
 .option {
