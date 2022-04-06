@@ -6,6 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Dan's Portfolio</title>
 		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 	</head>
 	<body>
 		<!-- mobile skeleton starts here -->
@@ -15,16 +22,19 @@
 					<a href="#" class="logo">
 						<img src="./images/Welcome.svg" alt="Welcome" />
 					</a>
-					<a href="#" class="menu">
-						<img src="./images/menu.svg" alt="Drop down menu" />
-					</a>
-					<!-- mobile menu -->
-					<ul>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
+					<ul class="mobile-icons">
+						<li><i class="fa fa-bars fa-xl hamburger"></i></li>
+						<li><i class="fa fa-xmark fa-solid fa-xl close"></i></li>
 					</ul>
 				</div>
+				<!-- mobile menu -->
+				<ul class="options">
+					<li>
+						<a href="#portfolio" id="portfolio" class="option">Portfolio</a>
+					</li>
+					<li><a href="#about" id="about" class="option">About</a></li>
+					<li><a href="#contact" id="contact" class="option">Contact</a></li>
+				</ul>
 				<div class="desktop">
 					<ul>
 						<li><a href="#portfolio">Portfolio</a></li>
@@ -359,5 +369,7 @@
 			<div class="bar"></div>
 			<div class="space"></div>
 		</footer>
+
+		<script src="main.js"></script>
 	</body>
 </html>
