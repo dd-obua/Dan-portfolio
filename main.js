@@ -31,3 +31,43 @@ mobileIcons.addEventListener('click', toggleMenuOptions);
 portfolio.addEventListener('click', toggleMenuOptions);
 about.addEventListener('click', toggleMenuOptions);
 contact.addEventListener('click', toggleMenuOptions);
+
+const stories = [
+  {
+    storyImage: './images/story-image.svg',
+    storyTitle: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on rails', 'css', 'JavaScript', 'html'],
+  },
+  {
+    storyImage: './images/story-image.svg',
+    storyTitle: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on rails', 'css', 'JavaScript', 'html'],
+  },
+  {
+    storyImage: './images/story-image.svg',
+    storyTitle: 'Multi-Post Stories Gain+Glory',
+    languages: ['Ruby on rails', 'css', 'JavaScript', 'html'],
+  },
+];
+
+const multiStories = document.querySelector('.multi-stories');
+stories.forEach((stry, index) => {
+  let storyItems = '';
+  stry.languages.map((storyItem) => {
+    storyItems += ` <li>${storyItem}</li>`;
+    return null;
+  });
+
+  const story = `
+<div class="story">
+          <img src="${stry.storyImage}" class="story-image" alt="">
+          <div class="content">
+            <h2> ${stry.storyTitle} </h2>
+            <ul> ${storyItems} </ul>
+            <button class="btn" id="${index}" type="button" name="story-button" aria-label="See project button" >See Project</button>
+          </div>
+        </div>
+`;
+
+  multiStories.innerHTML += story;
+});
