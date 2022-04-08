@@ -50,8 +50,17 @@ const stories = [
         'Terminal',
         'CodePen',
       ],
-      liveVersionLink: '',
-      sourceLink: '',
+      liveVersionLink: 'https://dd-obua.github.io/Dan-portfolio/',
+      sourceLink: 'https://github.com/dd-obua/Dan-portfolio',
+    },
+    mobileStoryDetails: {
+      name: 'Keeping track of hundreds of components',
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      featuredImage: './images/mobile-featured-image.svg',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      liveVersionLink: 'https://dd-obua.github.io/Dan-portfolio/',
+      sourceLink: 'https://github.com/dd-obua/Dan-portfolio',
     },
   },
   {
@@ -71,8 +80,17 @@ const stories = [
         'Terminal',
         'CodePen',
       ],
-      liveVersionLink: '',
-      sourceLink: '',
+      liveVersionLink: 'https://dd-obua.github.io/Dan-portfolio/',
+      sourceLink: 'https://github.com/dd-obua/Dan-portfolio',
+    },
+    mobileStoryDetails: {
+      name: 'Keeping track of hundreds of components',
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      featuredImage: './images/mobile-featured-image.svg',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      liveVersionLink: 'https://dd-obua.github.io/Dan-portfolio/',
+      sourceLink: 'https://github.com/dd-obua/Dan-portfolio',
     },
   },
   {
@@ -92,8 +110,17 @@ const stories = [
         'Terminal',
         'CodePen',
       ],
-      liveVersionLink: '',
-      sourceLink: '',
+      liveVersionLink: 'https://dd-obua.github.io/Dan-portfolio/',
+      sourceLink: 'https://github.com/dd-obua/Dan-portfolio',
+    },
+    mobileStoryDetails: {
+      name: 'Keeping track of hundreds of components',
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      featuredImage: './images/mobile-featured-image.svg',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      liveVersionLink: 'https://dd-obua.github.io/Dan-portfolio/',
+      sourceLink: 'https://github.com/dd-obua/Dan-portfolio',
     },
   },
   {
@@ -113,8 +140,17 @@ const stories = [
         'Terminal',
         'CodePen',
       ],
-      liveVersionLink: '',
-      sourceLink: '',
+      liveVersionLink: 'https://dd-obua.github.io/Dan-portfolio/',
+      sourceLink: 'https://github.com/dd-obua/Dan-portfolio',
+    },
+    mobileStoryDetails: {
+      name: 'Keeping track of hundreds of components',
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      featuredImage: './images/mobile-featured-image.svg',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      liveVersionLink: 'https://dd-obua.github.io/Dan-portfolio/',
+      sourceLink: 'https://github.com/dd-obua/Dan-portfolio',
     },
   },
   {
@@ -134,8 +170,17 @@ const stories = [
         'Terminal',
         'CodePen',
       ],
-      liveVersionLink: '',
-      sourceLink: '',
+      liveVersionLink: 'https://dd-obua.github.io/Dan-portfolio/',
+      sourceLink: 'https://github.com/dd-obua/Dan-portfolio',
+    },
+    mobileStoryDetails: {
+      name: 'Keeping track of hundreds of components',
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      featuredImage: './images/mobile-featured-image.svg',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      liveVersionLink: 'https://dd-obua.github.io/Dan-portfolio/',
+      sourceLink: 'https://github.com/dd-obua/Dan-portfolio',
     },
   },
   {
@@ -155,13 +200,45 @@ const stories = [
         'Terminal',
         'CodePen',
       ],
-      liveVersionLink: '',
-      sourceLink: '',
+      liveVersionLink: 'https://dd-obua.github.io/Dan-portfolio/',
+      sourceLink: 'https://github.com/dd-obua/Dan-portfolio',
+    },
+    mobileStoryDetails: {
+      name: 'Keeping track of hundreds of components',
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      featuredImage: './images/mobile-featured-image.svg',
+      technologies: ['Ruby on rails', 'css', 'JavaScript'],
+      liveVersionLink: 'https://dd-obua.github.io/Dan-portfolio/',
+      sourceLink: 'https://github.com/dd-obua/Dan-portfolio',
     },
   },
 ];
+const closePopup = () => {
+  const closeModalIcon = document.querySelector('.close-modal-icon');
+  closeModalIcon.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (!modalContainer.classList.contains('hide-modal')) {
+      modalContainer.classList.add('hide-modal');
+    }
+  });
+};
+
+const closeMobilePopup = () => {
+  const closeMobileModalIcon = document.querySelector(
+    '.close-mobile-modal-icon'
+  );
+  closeMobileModalIcon.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (!mobileModalContainer.classList.contains('hide-modal')) {
+      mobileModalContainer.classList.add('hide-modal');
+    }
+  });
+};
 
 const modalContainer = document.getElementById('modalDesktop');
+
+const mobileModalContainer = document.getElementById('modalMobile');
 
 const multiStories = document.querySelector('.multi-stories');
 stories.forEach((stry, index) => {
@@ -173,8 +250,8 @@ stories.forEach((stry, index) => {
 
   const story = `
 <div class="story">
+<div class="empty"></div>
           <div class="content">
-          <img src="${stry.storyImage}" class="story-image" alt="">
             <h2> ${stry.storyTitle} </h2>
             <ul> ${storyItems} </ul>
             <button class="btn" id="${index}" type="button" name="story-button" aria-label="See project button" >See Project</button>
@@ -198,16 +275,52 @@ function displayModal() {
           return null;
         });
         const modalTemplate = `
-				<div class="story-modal">
-				Hi I am a modal
-				<br>
-				<ul>${technologies}</ul>
-				</div>
-			`;
+            <div class="modal">
+      <div class="modal-content">
+      <i class="close-modal-icon fa-solid fa-xmark fa-xl"></i>
+        <img src="${storyInfo.storyDetails.featuredImage}" class="img" alt="" />
+        <div class="below">
+          <h3> ${storyInfo.storyDetails.name} </h3>
+          <a href="${storyInfo.storyDetails.liveVersionLink}">See live <img src="./images/live.svg" alt="" /></a>
+          <a href="${storyInfo.storyDetails.sourceLink}">See live <img src="./images/Source <img src="./images/source.svg" alt="" /></a>
+        </div>
+        <ul> ${technologies} </ul>
+        <p> ${storyInfo.storyDetails.description} </p>
+      </div>
+    </div>
+        `;
         if (modalContainer.classList.contains('hide-modal')) {
           modalContainer.classList.remove('hide-modal');
           modalContainer.innerHTML = modalTemplate;
         }
+        closePopup();
+      } else {
+        // logic for mobile version
+        let technologies = '';
+        storyInfo.mobileStoryDetails.technologies.map((technology) => {
+          technologies += `<li>${technology}</li>`;
+          return null;
+        });
+        const mobileModalTemplate = `
+            <div class="modal">
+      <div class="modal-content">
+      <i class="close-mobile-modal-icon fa-solid fa-xmark fa-xl"></i>
+        <img src="${storyInfo.mobileStoryDetails.featuredImage}" class="img" alt="" />
+        <div class="below">
+          <h3> ${storyInfo.mobileStoryDetails.name} </h3>
+          <a href="${storyInfo.mobileStoryDetails.liveVersionLink}">See live <img src="./images/live.svg" alt="" /></a>
+          <a href="${storyInfo.mobileStoryDetails.sourceLink}">See live <img src="./images/Source <img src="./images/source.svg" alt="" /></a>
+        </div>
+        <ul> ${technologies} </ul>
+        <p> ${storyInfo.mobileStoryDetails.description} </p>
+      </div>
+    </div>
+        `;
+        if (mobileModalContainer.classList.contains('hide-modal')) {
+          mobileModalContainer.classList.remove('hide-modal');
+          mobileModalContainer.innerHTML = mobileModalTemplate;
+        }
+        closeMobilePopup();
       }
     });
   });

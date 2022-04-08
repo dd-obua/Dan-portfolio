@@ -47,24 +47,20 @@ body a {
   border: 1px solid #acb7c3;
 }
 
-.story .content {
-  height: 226px;
+.story {
+  width: 327px;
+  height: 474px;
+  margin: 0 auto 24px auto;
+  border-radius: 8px;
   background: #fff;
   border: 1px solid #ebf0ee;
-  border-radius: 8px;
 }
 
-.empty {
+.story .empty {
   height: 252px;
-  background: #d0d9d4;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-}
-
-.story-image {
-  width: 369px;
-  height: 252px;
-  margin: 0;
+  background: #ebf0ee;
 }
 
 .about-me h2 {
@@ -431,12 +427,33 @@ main {
   margin: 0 auto 24px auto;
   border-radius: 8px;
   background: #ebf0ee;
+  border: 1px solid #ebf0ee;
+}
+
+.story-image {
+  width: 327px;
+  height: 252px;
+}
+
+.story-image img {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: 252px;
+}
+
+.story .content {
+  border-radius: 8px;
+  height: 222px;
+  background: #fff;
+  border: 1px solid #ebf0ee;
 }
 
 .story .content ul {
   display: flex;
-  justify-content: space-between;
-  margin: 0 11px 29px 11px;
+  justify-content: center;
+  margin-bottom: 29px;
 }
 
 .story .content li {
@@ -446,6 +463,10 @@ main {
   font-size: 12px;
   line-height: 16px;
   padding: 8px 12px;
+}
+
+.story .content li:not(:first-child) {
+  margin-left: 8px;
 }
 
 .footer form ul {
@@ -512,6 +533,29 @@ form input::-webkit-input-placeholder {
 }
 
 @media only screen and (max-width: 767px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  .story {
+    width: 327px;
+    height: 474px;
+    margin: 0 auto 24px auto;
+    border-radius: 8px;
+    background: #ebf0ee;
+    border: 1px solid #ebf0ee;
+  }
+
+  .story .empty {
+    height: 252px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: #ebf0ee;
+  }
+
   form {
     background-image: url('./images/illustration-contact-form.svg');
   }
@@ -544,9 +588,26 @@ form input::-webkit-input-placeholder {
 
 @media only screen and (min-width: 768px) {
   * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  .story {
+    width: 327px;
+    height: 474px;
+    margin: 0 auto 24px auto;
+    border-radius: 8px;
+    background: #ebf0ee;
+    border: 1px solid #ebf0ee;
+  }
+
+  .story .empty {
+    height: 252px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: #ebf0ee;
   }
 
   .hide-desktop {
@@ -659,36 +720,12 @@ form input::-webkit-input-placeholder {
   }
 
   .story {
-    width: 369px;
+    width: 327px;
     height: 474px;
+    margin: 0 auto 24px auto;
     border-radius: 8px;
-    display: flex;
-    justify-content: stretch;
-  }
-
-  .story-image img {
-    width: 420px;
-    height: 47%;
-  }
-
-  .story .content {
-    height: 474px;
-  }
-
-  .story .content ul {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 29px;
-  }
-
-  .story .content li {
     background: #ebf0ee;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    padding: 8px 12px;
-    margin: 0 4px;
+    border: 1px solid #ebf0ee;
   }
 
   .btn {
@@ -783,11 +820,12 @@ form input::-webkit-input-placeholder {
     background: #c1c7d0;
     padding-top: 122px;
     padding-bottom: 140px;
-    /* position: fixed;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0; */
+    left: 0;
+    overflow: scroll;
   }
 
   .modal-content {
@@ -795,11 +833,6 @@ form input::-webkit-input-placeholder {
     background: #fff;
     margin: 0 auto;
     border-radius: 8px;
-    /* position: fixed; */
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
   }
 
   .modal .img {
@@ -825,7 +858,7 @@ form input::-webkit-input-placeholder {
     margin-right: 80px;
   }
 
-  .modal-content button {
+  .modal-content a {
     height: 48px;
     border-radius: 8px;
     color: #fff;
@@ -841,7 +874,15 @@ form input::-webkit-input-placeholder {
     line-height: 20px;
   }
 
-  .modal-content button img {
+  .close-modal-icon {
+    padding: 20px;
+    background: #ebecf0;
+    border-radius: 8px 8px;
+    float: right;
+    margin-right: 80px;
+  }
+
+  .modal-content a img {
     margin-left: 14px;
   }
 
