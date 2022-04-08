@@ -769,3 +769,7 @@ input:active,
 textarea:active {
   transform: scale(1.01);
 }
+
+.hide-modal {
+  display: none;
+}
