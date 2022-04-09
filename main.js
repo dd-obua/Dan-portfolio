@@ -307,7 +307,7 @@ function displayModal() {
               <img src="${storyInfo.mobileStoryDetails.featuredImage}" class="img" alt="" />
                 <div class="below">
                   <h3> ${storyInfo.mobileStoryDetails.name} </h3>
-                  <ul> ${technology} </ul>
+                  <ul> ${technologies} </ul>
                   <p> ${storyInfo.mobileStoryDetails.description} </p>
                   <div class="links">
                     <a href="${storyInfo.mobileStoryDetails.liveVersionLink}">See Live <img src="./images/live.svg" alt="" /></a>
