@@ -225,20 +225,21 @@ body a {
 
 input,
 textarea {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
   transition: all 0.3s;
 }
 
 form input {
-  display: inline-block;
-  width: 100%;
   height: 48px;
   padding: 15px 16px;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
+
 }
 
 form textarea {
-  width: 100%;
   height: 114px;
   padding: 12px;
   color: #091e42;
@@ -366,8 +367,7 @@ main {
   height: 382px;
   padding-top: 55px;
   padding-bottom: 69px;
-  background: url('./images/bg-img-1.svg') top right no-repeat,
-    url('./images/bg-img-2.svg') bottom left no-repeat, #fff;
+  background: url('./images/bg-img-1.svg') top right no-repeat, url('./images/bg-img-2.svg') bottom left no-repeat, #fff;
 }
 
 .about-me p {
@@ -494,14 +494,6 @@ main {
   margin-bottom: 10px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-}
-
 footer h3 {
   font-weight: 700;
   font-size: 40px;
@@ -539,6 +531,15 @@ form input::-webkit-input-placeholder {
     margin: 0;
     border: 0;
   }
+
+  form {
+  background-image: url('./images/illustration-contact-form.svg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
 
   .mobile-modal {
     font-family: 'Inter', sans-serif;
@@ -661,10 +662,6 @@ form input::-webkit-input-placeholder {
     background: #ebf0ee;
   }
 
-  form {
-    background-image: url('./images/illustration-contact-form.svg');
-  }
-
   .skeleton {
     background-image: url('/images/skeleton.svg');
   }
@@ -697,6 +694,14 @@ form input::-webkit-input-placeholder {
     padding: 0;
     margin: 0;
     border: 0;
+  }
+
+  form {
+    width: 45%;
+  }
+
+  form .submit-button {
+    margin-left: 5%;
   }
 
   .story {

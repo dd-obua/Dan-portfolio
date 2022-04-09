@@ -214,6 +214,9 @@ const stories = [
     },
   },
 ];
+
+const modalContainer = document.getElementById('modal-desktop');
+const mobileModalContainer = document.getElementById('modal-mobile');
 const closePopup = () => {
   const closeModalIcon = document.querySelector('.close-modal-icon');
   closeModalIcon.addEventListener('click', (e) => {
@@ -226,7 +229,7 @@ const closePopup = () => {
 
 const closeMobilePopup = () => {
   const closeMobileModalIcon = document.querySelector(
-    '.close-mobile-modal-icon'
+    '.close-mobile-modal-icon',
   );
   closeMobileModalIcon.addEventListener('click', (e) => {
     e.preventDefault();
@@ -235,10 +238,6 @@ const closeMobilePopup = () => {
     }
   });
 };
-
-const modalContainer = document.getElementById('modal-desktop');
-
-const mobileModalContainer = document.getElementById('modal-mobile');
 
 const multiStories = document.querySelector('.multi-stories');
 stories.forEach((stry, index) => {
@@ -330,20 +329,3 @@ function displayModal() {
 }
 
 displayModal();
-
-const contacForm = document.forms.contactForm;
-const input = contacForm.email;
-const error = document.querySelector('.form-error');
-console.log(contacForm);
-function validateEmail() {
-  if (input.value !== input.value.toLowerCase()) {
-    input.focus();
-    error.style.fontFamily = 'Inter';
-    error.style.fontSize = '17';
-    error.style.color = '#ff6163';
-    error.innerText = 'Email should be lowercase.';
-    return false;
-  }
-  contacForm.submit();
-  return true;
-}
