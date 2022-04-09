@@ -597,7 +597,7 @@ form input::-webkit-input-placeholder {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-  }
+  } 
 
   .links a {
     background: #36b37f;
