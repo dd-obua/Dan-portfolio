@@ -313,7 +313,6 @@ function displayModal() {
                     <a href="${storyInfo.mobileStoryDetails.liveVersionLink}">See Live <img src="./images/live.svg" alt="" /></a>
                     <a href="${storyInfo.mobileStoryDetails.sourceLink}">See Source <img src="./images/source.svg" alt="" /></a>
                   </div>
-                 
                 </div>
             </div>
           </div>
