@@ -41,7 +41,7 @@ const stories = [
       name: 'Keeping track of hundreds of components',
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      featuredImage: './images/modal-image.svg',
+      featuredImage: './images/desktop-featrured-image.svg',
       technologies: [
         'CodeKit',
         'GitHub',
@@ -71,7 +71,7 @@ const stories = [
       name: 'Keeping track of hundreds of components',
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      featuredImage: './images/modal-image.svg',
+      featuredImage: './images/desktop-featrured-image.svg',
       technologies: [
         'CodeKit',
         'GitHub',
@@ -101,7 +101,7 @@ const stories = [
       name: 'Keeping track of hundreds of components',
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      featuredImage: './images/modal-image.svg',
+      featuredImage: './images/desktop-featrured-image.svg',
       technologies: [
         'CodeKit',
         'GitHub',
@@ -131,7 +131,7 @@ const stories = [
       name: 'Keeping track of hundreds of components',
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      featuredImage: './images/modal-image.svg',
+      featuredImage: './images/desktop-featrured-image.svg',
       technologies: [
         'CodeKit',
         'GitHub',
@@ -161,7 +161,7 @@ const stories = [
       name: 'Keeping track of hundreds of components',
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      featuredImage: './images/modal-image.svg',
+      featuredImage: './images/desktop-featrured-image.svg',
       technologies: [
         'CodeKit',
         'GitHub',
@@ -191,7 +191,7 @@ const stories = [
       name: 'Keeping track of hundreds of components',
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-      featuredImage: './images/modal-image.svg',
+      featuredImage: './images/desktop-featrured-image.svg',
       technologies: [
         'CodeKit',
         'GitHub',
@@ -236,9 +236,9 @@ const closeMobilePopup = () => {
   });
 };
 
-const modalContainer = document.getElementById('modalDesktop');
+const modalContainer = document.getElementById('modal-desktop');
 
-const mobileModalContainer = document.getElementById('modalMobile');
+const mobileModalContainer = document.getElementById('modal-mobile');
 
 const multiStories = document.querySelector('.multi-stories');
 stories.forEach((stry, index) => {
@@ -276,13 +276,13 @@ function displayModal() {
         });
         const modalTemplate = `
             <div class="modal">
-      <div class="modal-content">
-      <i class="close-modal-icon fa-solid fa-xmark fa-xl"></i>
+      <div class="desktop-modal-content">
+        <i class="close-modal-icon fa-solid fa-xmark fa-xl"></i>
         <img src="${storyInfo.storyDetails.featuredImage}" class="img" alt="" />
         <div class="below">
           <h3> ${storyInfo.storyDetails.name} </h3>
-          <a href="${storyInfo.storyDetails.liveVersionLink}">See live <img src="./images/live.svg" alt="" /></a>
-          <a href="${storyInfo.storyDetails.sourceLink}">See live <img src="./images/Source <img src="./images/source.svg" alt="" /></a>
+            <a href="${storyInfo.storyDetails.liveVersionLink}">See Live <img src="./images/live.svg" alt="" /></a>
+            <a href="${storyInfo.storyDetails.sourceLink}">See Source <img src="./images/source.svg" alt="" /></a>
         </div>
         <ul> ${technologies} </ul>
         <p> ${storyInfo.storyDetails.description} </p>
@@ -302,19 +302,22 @@ function displayModal() {
           return null;
         });
         const mobileModalTemplate = `
-            <div class="modal">
-      <div class="modal-content">
-      <i class="close-mobile-modal-icon fa-solid fa-xmark fa-xl"></i>
-        <img src="${storyInfo.mobileStoryDetails.featuredImage}" class="img" alt="" />
-        <div class="below">
-          <h3> ${storyInfo.mobileStoryDetails.name} </h3>
-          <a href="${storyInfo.mobileStoryDetails.liveVersionLink}">See live <img src="./images/live.svg" alt="" /></a>
-          <a href="${storyInfo.mobileStoryDetails.sourceLink}">See live <img src="./images/Source <img src="./images/source.svg" alt="" /></a>
-        </div>
-        <ul> ${technologies} </ul>
-        <p> ${storyInfo.mobileStoryDetails.description} </p>
-      </div>
-    </div>
+          <div class="mobile-modal">
+            <div class="mobile-modal-content">
+              <i class="close-mobile-modal-icon fa-solid fa-xmark fa-xl"></i>
+              <img src="${storyInfo.mobileStoryDetails.featuredImage}" class="img" alt="" />
+                <div class="below">
+                  <h3> ${storyInfo.mobileStoryDetails.name} </h3>
+                  <ul> ${technologies} </ul>
+                  <p> ${storyInfo.mobileStoryDetails.description} </p>
+                  <div class="links">
+                    <a href="${storyInfo.mobileStoryDetails.liveVersionLink}">See Live <img src="./images/live.svg" alt="" /></a>
+                    <a href="${storyInfo.mobileStoryDetails.sourceLink}">See Source <img src="./images/source.svg" alt="" /></a>
+                  </div>
+                 
+                </div>
+            </div>
+          </div>
         `;
         if (mobileModalContainer.classList.contains('hide-modal')) {
           mobileModalContainer.classList.remove('hide-modal');
