@@ -330,3 +330,7 @@ function displayModal() {
 }
 
 displayModal();
+
+const form = document.forms.contact_form;
+const input = form.email;
+const error = document.querySelector('.form-error');

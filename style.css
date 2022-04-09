@@ -532,6 +532,11 @@ form input::-webkit-input-placeholder {
   margin-bottom: 330px;
 }
 
+.form-errors {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 767px) {
   * {
     box-sizing: border-box;
