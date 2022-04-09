@@ -119,6 +119,18 @@ body a {
   margin: 0 auto;
 }
 
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  transition: all 0.8s;
+}
+
+.btn:hover {
+  color: rgb(8, 192, 8);
+  background: #fff;
+}
+
 .story .content .btn {
   color: #fff;
   background: #36b37f;
@@ -163,6 +175,14 @@ body a {
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 64px;
+}
+
+.story-image img {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: 252px;
 }
 
 .strength .strength-img img {
@@ -236,7 +256,6 @@ form input {
   padding: 15px 16px;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
-
 }
 
 form textarea {
@@ -421,25 +440,8 @@ main {
   display: grid;
 }
 
-.story {
-  width: 327px;
-  height: 474px;
-  margin: 0 auto 24px auto;
-  border-radius: 8px;
-  background: #ebf0ee;
-  border: 1px solid #ebf0ee;
-}
-
 .story-image {
   width: 327px;
-  height: 252px;
-}
-
-.story-image img {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  width: inherit;
   height: 252px;
 }
 
@@ -448,6 +450,10 @@ main {
   height: 222px;
   background: #fff;
   border: 1px solid #ebf0ee;
+}
+
+.footer form ul {
+  width: 100%;
 }
 
 .story .content ul {
@@ -467,22 +473,6 @@ main {
 
 .story .content li:not(:first-child) {
   margin-left: 8px;
-}
-
-.footer form ul {
-  width: 100%;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 100px;
-  transition: all 0.8s;
-}
-
-.btn:hover {
-  color: rgb(8, 192, 8);
-  background: #fff;
 }
 
 /* Styles for footer */
@@ -533,13 +523,13 @@ form input::-webkit-input-placeholder {
   }
 
   form {
-  background-image: url('./images/illustration-contact-form.svg');
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-}
+    background-image: url('./images/illustration-contact-form.svg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
 
   .mobile-modal {
     font-family: 'Inter', sans-serif;
@@ -629,7 +619,6 @@ form input::-webkit-input-placeholder {
 
   .links a:first-child {
     width: 141px;
-    /* margin-right: 12px; */
   }
 
   .links a:last-child {
@@ -800,6 +789,16 @@ form input::-webkit-input-placeholder {
     padding-bottom: 84px;
   }
 
+  .desktop-modal-content li {
+    background: #ebecf0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-right: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
   .social ul li {
     margin: 10px;
   }
@@ -829,23 +828,13 @@ form input::-webkit-input-placeholder {
     margin: 0 auto 72px auto;
   }
 
-  .story {
-    width: 327px;
-    height: 474px;
-    margin: 0 auto 24px auto;
-    border-radius: 8px;
-    background: #ebf0ee;
-    border: 1px solid #ebf0ee;
-  }
-
   .btn {
     display: flex;
     justify-content: center;
   }
 
   .about-me {
-    background: url('./images/bg-desktop-1.svg') right top no-repeat,
-      url('./images/bg-desktop-2.svg') left bottom no-repeat;
+    background: url('./images/bg-desktop-1.svg') right top no-repeat, url('./images/bg-desktop-2.svg') left bottom no-repeat;
     padding-top: 120px;
   }
 
@@ -886,9 +875,7 @@ form input::-webkit-input-placeholder {
     display: flex;
     justify-content: center;
     padding-bottom: 225px;
-    background: url('./images/footer-left.svg') left bottom no-repeat,
-      url('./images/footer-middle.svg') 20% 80% no-repeat,
-      url('./images/footer-right.svg') right bottom no-repeat;
+    background: url('./images/footer-left.svg') left bottom no-repeat, url('./images/footer-middle.svg') 20% 80% no-repeat, url('./images/footer-right.svg') right bottom no-repeat;
   }
 
   .h3-form .text {
@@ -1008,16 +995,6 @@ form input::-webkit-input-placeholder {
     margin-bottom: 36px;
     display: flex;
     justify-content: flex-start;
-  }
-
-  .desktop-modal-content li {
-    background: #ebecf0;
-    border-radius: 8px;
-    padding: 8px 12px;
-    margin-right: 8px;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
   }
 
   .desktop-modal-content p {
