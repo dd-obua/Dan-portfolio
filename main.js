@@ -331,6 +331,24 @@ function displayModal() {
 
 displayModal();
 
-const form = document.forms.contact_form;
-const input = form.email;
+const contacForm = document.forms.contactForm;
+const input = contacForm.email;
 const error = document.querySelector('.form-error');
+console.log(contacForm);
+function validateEmail() {
+  if (input.value !== input.value.toLowerCase()) {
+    input.focus();
+    error.style.fontFamily = 'Inter';
+    error.style.fontSize = '17';
+    error.style.color = '#ff6163';
+    error.innerText = 'Email should be lowercase.';
+    return false;
+  }
+  contacForm.submit();
+  return true;
+}
+
+contacForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  validateEmail();
+});
