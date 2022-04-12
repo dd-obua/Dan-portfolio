@@ -2,10 +2,12 @@
   .mobile {
     display: none;
   }
+
   .desktop {
     display: block;
     width: 100%;
   }
+
   .ad,
   .about-me,
   .footer {
@@ -101,7 +103,7 @@
   }
 
   .story {
-    width: 369px;
+    width: 370px;
     height: 474px;
     border-radius: 8px;
     background: #ebf0ee;
@@ -110,7 +112,7 @@
   .story .content ul {
     display: flex;
     justify-content: center;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
   }
 
   .story .content li {
@@ -129,8 +131,7 @@
   }
 
   .about-me {
-    background: url('./images/bg-desktop-1.svg') right top no-repeat,
-      url('./images/bg-desktop-2.svg') left bottom no-repeat;
+    background: url('./images/bg-desktop-1.svg') right top no-repeat, url('./images/bg-desktop-2.svg') left bottom no-repeat;
     padding-top: 120px;
   }
 
@@ -173,9 +174,7 @@
   .h3-form {
     display: flex;
     padding-bottom: 225px;
-    background: url('./images/footer-left.svg') left bottom no-repeat,
-      url('./images/footer-middle.svg') 20% 80% no-repeat,
-      url('./images/footer-right.svg') right bottom no-repeat;
+    background: url('./images/footer-left.svg') left bottom no-repeat, url('./images/footer-middle.svg') 20% 80% no-repeat, url('./images/footer-right.svg') right bottom no-repeat;
     padding-right: 135px;
   }
 
