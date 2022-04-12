@@ -7,3 +7,6 @@ const options = document.querySelector('.options');
 const portfolio = document.querySelector('#portfolio-link');
 const about = document.querySelector('#about-link');
 const contact = document.querySelector('#contact-link');
+
+closeIcon.style.display = 'none';
+options.style.display = 'none';
