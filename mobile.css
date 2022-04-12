@@ -11,6 +11,11 @@
   margin: 30px;
 }
 
+.logo:hover {
+  transition: all 2s;
+  transform: rotate(360deg);
+}
+
 .desktop {
   display: none;
 }
@@ -371,4 +376,37 @@ form button:active {
 
 .social li {
   margin: 0 10px;
+}
+
+/* styles for mobile menu project */
+.click-mobile-icon {
+  transform: translateY(0);
+}
+
+.options {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  background: #fff;
+  padding-left: 24px;
+  position: fixed;
+  overflow: scroll;
+}
+
+.options a {
+  color: #3a4a42;
+}
+
+.options li {
+  margin-bottom: 40px;
+}
+
+.close {
+  padding: 15px 0;
+  color: #67798e;
+  position: absolute;
+  right: 7%;
 }

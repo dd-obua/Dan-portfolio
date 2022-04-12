@@ -26,3 +26,18 @@ input:active,
 textarea:active {
   transform: scale(1.01);
 }
+
+img {
+  transition: all 0.8s;
+}
+
+img:hover {
+  transform: scale(1.4);
+}
+
+form input::-webkit-input-placeholder {
+  color: #6b778c;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
