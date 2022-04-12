@@ -381,6 +381,7 @@ form button:active {
 /* styles for mobile menu project */
 .click-mobile-icon {
   transform: translateY(0);
+  transform: translateX(0);
 }
 
 .options {
@@ -393,7 +394,12 @@ form button:active {
   background: #fff;
   padding-left: 24px;
   position: fixed;
-  overflow: scroll;
+  margin: 0;
+  overflow: hidden;
+}
+
+.options::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 .options a {
