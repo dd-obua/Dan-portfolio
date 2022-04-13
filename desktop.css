@@ -7,9 +7,15 @@
     margin-right: 34px;
     margin-top: 24px;
   }
+
   .mobile {
     display: none;
   }
+
+  .hide-desktop {
+    display: none !important;
+  }
+
   .desktop {
     display: block;
     width: 100%;
@@ -131,6 +137,25 @@
     margin: 0 4px;
   }
 
+  .story .content .btn {
+    color: #fff;
+    background: #36b37f;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 12px;
+    border-radius: 4px;
+    width: 122px;
+    margin: 0 auto;
+  }
+
+  .story .content .btn:hover {
+    background: #fff;
+    color: #36b37f;
+    border: 1px solid #36b37f;
+    font-weight: 920;
+  }
+
   .btn {
     display: flex;
     justify-content: center;
@@ -208,7 +233,7 @@
 
   .email {
     display: none;
-  } 
+  }
 
   .footer {
     width: 100%;

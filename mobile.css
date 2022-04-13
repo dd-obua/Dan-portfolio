@@ -11,6 +11,13 @@
   margin: 30px;
 }
 
+.mobile-icons {
+  display: flex;
+  flex-basis: 375px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 .logo:hover {
   transition: all 2s;
   transform: rotate(360deg);
@@ -417,4 +424,109 @@ form button:active {
   color: #67798e;
   position: absolute;
   right: 7%;
+}
+
+/* styles for mobile model */
+.mobile-modal {
+  font-family: 'Inter', sans-serif;
+  color: #172b4d;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: scroll;
+}
+
+.mobile-modal img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 5%;
+}
+
+.mobile-modal h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  width: 50%;
+  margin-left: 16px;
+}
+
+.mobile-modal p {
+  margin: 16px;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.mobile-modal ul {
+  margin: 16px;
+  display: flex;
+}
+
+.mobile-modal li {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  background: #ebf0ee;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.close-mobile-modal-icon {
+  color: #fff;
+  position: absolute;
+  top: 6%;
+  right: 11%;
+  z-index: 999;
+}
+
+.mobile-modal .links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -6 px;
+}
+
+.links a {
+  background: #36b37f;
+  width: inherit;
+  height: 48px;
+  text-align: left;
+  border-radius: 4px;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0 6px;
+}
+
+.links a:first-child {
+  width: 141px;
+}
+
+.links a:last-child {
+  width: 158px;
+}
+
+.links:first-child img {
+  width: 18px;
+  height: 18px;
+}
+
+.links:last-child img {
+  width: 18px;
+  height: 20px;
 }
