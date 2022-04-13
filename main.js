@@ -67,3 +67,94 @@ const closePopup = () => {
     }
   });
 };
+
+const multiStories = document.querySelector('.multi-stories');
+
+stories.forEach((stry, index) => {
+  let storyItems = '';
+  stry.languages.map((storyItem) => {
+    storyItems += ` <li>${storyItem}</li>`;
+    return null;
+  });
+
+  const story = `
+    <div class="story">
+      <div class="empty"></div>
+      <div class="content">
+        <h2> ${stry.storyTitle} </h2>
+        <ul> ${storyItems} </ul>
+        <button class="btn" id="${index}" type="button" name="story-button" aria-label="See project button">See Project</button>
+      </div>
+    </div>
+`;
+
+  multiStories.innerHTML += story;
+});
+
+function displayModal() {
+  const storyBtns = document.querySelectorAll('.btn');
+  storyBtns.forEach((storyBtn) => {
+    storyBtn.addEventListener('click', () => {
+      const btnId = storyBtn.getAttribute('id');
+      const storyInfo = stories[btnId];
+      if (window.innerWidth >= 768) {
+        let technologies = '';
+        storyInfo.storyDetails.technologies.map((technology) => {
+          technologies += `<li>${technology}</li>`;
+          return null;
+        });
+        const modalTemplate = `
+          <div class="modal">
+            <div class="desktop-modal-content">
+              <i class="close-modal-icon fa-solid fa-xmark fa-xl"></i>
+              <img src="${storyInfo.storyDetails.featuredImage}" class="img" alt="" />
+              <div class="below">
+                <h3> ${storyInfo.storyDetails.name} </h3>
+                  <a href="${storyInfo.storyDetails.liveVersionLink}">See Live <img src="./images/live.svg" alt="" /></a>
+                  <a href="${storyInfo.storyDetails.sourceLink}">See Source <img src="./images/source.svg" alt="" /></a>
+              </div>
+              <ul> ${technologies} </ul>
+              <p> ${storyInfo.storyDetails.description} </p>
+            </div>
+          </div>
+        `;
+        if (modalContainer.classList.contains('hide-modal')) {
+          modalContainer.classList.remove('hide-modal');
+          modalContainer.innerHTML = modalTemplate;
+        }
+        closePopup();
+      } else {
+        // logic for mobile version
+        let technologies = '';
+        storyInfo.mobileStoryDetails.technologies.map((technology) => {
+          technologies += `<li>${technology}</li>`;
+          return null;
+        });
+        const mobileModalTemplate = `
+          <div class="mobile-modal">
+            <div class="mobile-modal-content">
+              <i class="close-mobile-modal-icon fa-solid fa-xmark fa-xl"></i>
+              <img src="${storyInfo.mobileStoryDetails.featuredImage}" class="img" alt="" />
+                <div class="below">
+                  <h3> ${storyInfo.mobileStoryDetails.name} </h3>
+                  <ul> ${technologies} </ul>
+                  <p> ${storyInfo.mobileStoryDetails.description} </p>
+                  <div class="links">
+                    <a href="${storyInfo.mobileStoryDetails.liveVersionLink}">See Live <img src="./images/live.svg" alt="" /></a>
+                    <a href="${storyInfo.mobileStoryDetails.sourceLink}">See Source <img src="./images/source.svg" alt="" /></a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        `;
+        if (mobileModalContainer.classList.contains('hide-modal')) {
+          mobileModalContainer.classList.remove('hide-modal');
+          mobileModalContainer.innerHTML = mobileModalTemplate;
+        }
+        closeMobilePopup();
+      }
+    });
+  });
+}
+
+displayModal();
