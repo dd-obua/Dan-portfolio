@@ -56,3 +56,14 @@ const stories = [
     },
   },
 ];
+
+const modalContainer = document.getElementById('modal-desktop');
+const closePopup = () => {
+  const closeModalIcon = document.querySelector('.close-modal-icon');
+  closeModalIcon.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (!modalContainer.classList.contains('hide-modal')) {
+      modalContainer.classList.add('hide-modal');
+    }
+  });
+};

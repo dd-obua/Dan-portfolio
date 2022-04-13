@@ -1,4 +1,12 @@
 @media only screen and (min-width: 768px) {
+  .close-modal-icon {
+    padding: 20px;
+    background: #ebecf0;
+    border-radius: 8px 8px;
+    float: right;
+    margin-right: 34px;
+    margin-top: 24px;
+  }
   .mobile {
     display: none;
   }
