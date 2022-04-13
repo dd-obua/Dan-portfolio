@@ -32,7 +32,7 @@ img {
 }
 
 img:hover {
-  transform: scale(1.4);
+  transform: scale(0.8);
 }
 
 form input::-webkit-input-placeholder {

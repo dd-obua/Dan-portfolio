@@ -274,20 +274,20 @@ function displayModal() {
           return null;
         });
         const modalTemplate = `
-            <div class="modal">
-      <div class="desktop-modal-content">
-        <i class="close-modal-icon fa-solid fa-xmark fa-xl"></i>
-        <img src="${storyInfo.storyDetails.featuredImage}" class="img" alt="" />
-        <div class="below">
-          <h3> ${storyInfo.storyDetails.name} </h3>
-            <a href="${storyInfo.storyDetails.liveVersionLink}">See Live <img src="./images/live.svg" alt="" /></a>
-            <a href="${storyInfo.storyDetails.sourceLink}">See Source <img src="./images/source.svg" alt="" /></a>
-        </div>
-        <ul> ${technologies} </ul>
-        <p> ${storyInfo.storyDetails.description} </p>
-      </div>
-    </div>
-        `;
+          <div class="modal">
+            <div class="desktop-modal-content">
+              <i class="close-modal-icon fa-solid fa-xmark fa-xl"></i>
+              <img src="${storyInfo.storyDetails.featuredImage}" class="img" alt="" />
+              <div class="below">
+                <h3> ${storyInfo.storyDetails.name} </h3>
+                  <a href="${storyInfo.storyDetails.liveVersionLink}">See Live <img src="./images/live.svg" alt="" /></a>
+                  <a href="${storyInfo.storyDetails.sourceLink}">See Source <img src="./images/source.svg" alt="" /></a>
+              </div>
+              <ul> ${technologies} </ul>
+              <p> ${storyInfo.storyDetails.description} </p>
+            </div>
+          </div>
+              `;
         if (modalContainer.classList.contains('hide-modal')) {
           modalContainer.classList.remove('hide-modal');
           modalContainer.innerHTML = modalTemplate;
