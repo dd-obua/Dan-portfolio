@@ -1,4 +1,8 @@
 @media only screen and (min-width: 768px) {
+  .skeleton {
+    background: none;
+  }
+
   .close-modal-icon {
     padding: 20px;
     background: #ebecf0;
@@ -33,6 +37,10 @@
     background-repeat: no-repeat;
   }
 
+  .union {
+    margin-bottom: 495px;
+  }
+
   .seperator,
   .bar {
     display: none;
@@ -65,6 +73,15 @@
     font-weight: 800;
     font-size: 32px;
     margin-top: 100px;
+    margin-bottom: 24px;
+  }
+
+  .denis {
+    color: #172b4d;
+  }
+
+  .trade {
+    color: #36b37e;
   }
 
   .advert {
@@ -87,6 +104,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 84px;
   }
 
   .social li {
@@ -115,9 +133,18 @@
   }
 
   .story {
-    width: 369px;
+    width: 370px;
     height: 474px;
+    margin: 0 auto;
     border-radius: 8px;
+    background: #ebf0ee;
+    border: 1px solid #ebf0ee;
+  }
+
+  .story .empty {
+    height: 252px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     background: #ebf0ee;
   }
 
@@ -135,6 +162,11 @@
     line-height: 16px;
     padding: 8px 12px;
     margin: 0 4px;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
   }
 
   .story .content .btn {
@@ -203,8 +235,17 @@
     margin-bottom: 50px;
   }
 
+  form {
+    width: 45%;
+  }
+
+  form .submit-button {
+    margin-left: 5%;
+  }
+
   .h3-form {
     display: flex;
+    justify-content: center;
     padding-bottom: 225px;
     background: url('./images/footer-left.svg') left bottom no-repeat,
       url('./images/footer-middle.svg') 20% 80% no-repeat,
@@ -213,12 +254,13 @@
   }
 
   .h3-form .text {
-    width: 37%;
-    margin-right: 1%;
     font-weight: 700;
     font-size: 30px;
     line-height: 52px;
     color: #172b4d;
+    padding-top: 50px;
+    width: 37%;
+    margin-right: 1%;
     padding-top: 50px;
   }
 
@@ -237,6 +279,10 @@
 
   .footer {
     width: 100%;
+  }
+
+  form button {
+    margin: 0;
   }
 
   form button {
@@ -266,6 +312,16 @@
     border-radius: 8px;
   }
 
+  .desktop-modal-content li {
+    background: #ebecf0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-right: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
   .modal .img {
     display: block;
     width: 872px;
@@ -290,6 +346,11 @@
     margin-right: 34px;
   }
 
+  .desktop {
+    display: block;
+    width: 100%;
+  }
+
   .desktop-modal-content a {
     height: 48px;
     border-radius: 8px;
@@ -312,15 +373,6 @@
 
   .desktop-modal-content a:last-child {
     width: 144px;
-  }
-
-  .close-modal-icon {
-    padding: 20px;
-    background: #ebecf0;
-    border-radius: 8px 8px;
-    float: right;
-    margin-right: 34px;
-    margin-top: 24px;
   }
 
   .desktop-modal-content ul {
