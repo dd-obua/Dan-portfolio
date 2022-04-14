@@ -266,7 +266,7 @@ function displayModal() {
   storyBtns.forEach((storyBtn) => {
     storyBtn.addEventListener('click', () => {
       const btnId = storyBtn.getAttribute('id');
-      const storyInfo = stories[btnIdx];
+      const storyInfo = stories[btnId];
       if (window.innerWidth >= 768) {
         let technologies = '';
         storyInfo.storyDetails.technologies.map((technology) => {
