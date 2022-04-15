@@ -214,6 +214,8 @@ const stories = [
     },
   },
 ];
+const modalContainer = document.getElementById('modal-desktop');
+
 const closePopup = () => {
   const closeModalIcon = document.querySelector('.close-modal-icon');
   closeModalIcon.addEventListener('click', (e) => {
@@ -224,10 +226,9 @@ const closePopup = () => {
   });
 };
 
+const mobileModalContainer = document.getElementById('modal-mobile');
 const closeMobilePopup = () => {
-  const closeMobileModalIcon = document.querySelector(
-    '.close-mobile-modal-icon'
-  );
+  const closeMobileModalIcon = document.querySelector('.close-mobile-modal-icon');
   closeMobileModalIcon.addEventListener('click', (e) => {
     e.preventDefault();
     if (!mobileModalContainer.classList.contains('hide-modal')) {
@@ -235,10 +236,6 @@ const closeMobilePopup = () => {
     }
   });
 };
-
-const modalContainer = document.getElementById('modal-desktop');
-
-const mobileModalContainer = document.getElementById('modal-mobile');
 
 const multiStories = document.querySelector('.multi-stories');
 stories.forEach((stry, index) => {
@@ -334,7 +331,6 @@ displayModal();
 const contacForm = document.forms.contactForm;
 const input = contacForm.email;
 const error = document.querySelector('.form-error');
-console.log(contacForm);
 function validateEmail() {
   if (input.value !== input.value.toLowerCase()) {
     input.focus();
