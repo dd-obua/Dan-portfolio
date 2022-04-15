@@ -1,15 +1,68 @@
-nav {
-  position: fixed;
-  top: 0;
+.mobile {
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  margin: 0 auto;
 }
 
-/* .mobile {
-    width: 90vw;
-    overflow: hidden;
-    display: flex;
-    margin: 5%;
-    padding: 3%;
-  } */
+.logo {
+  position: relative;
+  margin: 5%;
+}
+
+.mobile-icons i {
+  position: absolute;
+  right: 10%;
+}
+
+.mobile-icons {
+  margin-top: 7%;
+}
+
+.click-mobile-icon {
+  transform: translateY(0);
+}
+
+.close {
+  color: #67798e;
+  position: absolute;
+  z-index: 300;
+  right: 5%;
+}
+
+.options {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  z-index: 99;
+  background: #fff;
+  width: 100vw;
+  height: 1000vh;
+  padding-left: 2%;
+  padding-top: 15%;
+}
+
+.option {
+  color: #3a4a42;
+  padding-left: 24px;
+}
+
+.options::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.options a {
+  color: #3a4a42;
+}
+
+.options li {
+  margin-bottom: 40px;
+}
+
+nav {
+  /* position: absolute;
+  top: 0; */
+}
 
 .navigation {
   display: none;
@@ -19,7 +72,7 @@ nav {
   min-width: 375px;
   overflow-x: hidden;
   background-image: url('/images/skeleton.svg') no-repeat;
-  margin: 15% auto 0 auto;
+  margin: 15% auto 0% auto;
   overflow-x: hidden;
 }
 
@@ -30,12 +83,6 @@ nav {
   height: 100vh;
   background: #fff;
   position: fixed;
-  /* top: 0; */
-  /* right: 0; */
-  /* bottom: 0; */
-  /* left: 0;  */
-  /* overflow-y: visible; */
-  /* overflow: scroll; */
 }
 
 .mobile-modal img {
@@ -128,24 +175,6 @@ nav {
   height: 20px;
 }
 
-.mobile-icons {
-  /* width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 6%; */
-}
-
-.mobile-icons img {
-  position: absolute;
-  left: 15%;
-}
-
-.mobile-icons i {
-  position: absolute;
-  right: 10%;
-}
-
 .desktop {
   display: none;
 }
@@ -226,6 +255,8 @@ nav {
 }
 
 .story .content h2 {
+  width: 70%;
+  margin: 0 auto;
   text-align: center;
   color: #3a4a42;
   font-weight: 600;
@@ -634,47 +665,6 @@ form button:active {
 
 .social li {
   margin: 0 10px;
-}
-
-/* styles for mobile menu project */
-.click-mobile-icon {
-  transform: translateY(0);
-}
-
-.options {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  z-index: 99;
-  background: #fff;
-  width: 100vw;
-  height: 100vh;
-  padding-left: 24px;
-  top: 0;
-}
-
-.options::-webkit-scrollbar {
-  display: none; /* for Chrome, Safari, and Opera */
-}
-
-.options a {
-  color: #3a4a42;
-}
-
-.options li {
-  margin-bottom: 40px;
-}
-
-.close {
-  padding: 15px 0;
-  color: #67798e;
-  position: absolute;
-  right: 7%;
-}
-
-.option {
-  color: #3a4a42;
-  padding-left: 24px;
 }
 
 .mobile-modal {
