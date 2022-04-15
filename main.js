@@ -228,9 +228,7 @@ const closePopup = () => {
 };
 
 const closeMobilePopup = () => {
-  const closeMobileModalIcon = document.querySelector(
-    '.close-mobile-modal-icon'
-  );
+  const closeMobileModalIcon = document.querySelector('.close-mobile-modal-icon');
   closeMobileModalIcon.addEventListener('click', (e) => {
     e.preventDefault();
     if (!mobileModalContainer.classList.contains('hide-modal')) {
