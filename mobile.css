@@ -78,13 +78,12 @@ nav {
 .mobile-modal {
   font-family: 'Inter', sans-serif;
   color: #172b4d;
-  width: 100%;
-  height: 70vh;
+  height: 100%; 
   background: #fff;
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 2%;
   left: 0;
   overflow: scroll;
 }
@@ -92,8 +91,7 @@ nav {
 .mobile-modal img {
   display: block;
   margin: 0 auto;
-  width: 90vw;
-  padding-top: 5%;
+  width: 94vw;
 }
 
 footer h3 {
@@ -139,7 +137,7 @@ footer h3 {
 
 .close-mobile-modal-icon {
   color: #fff;
-  position: absolute;
+  position: relative;
   top: 9%;
   right: 11.4%;
   z-index: 999;
@@ -545,7 +543,6 @@ footer h3 {
   min-width: 100vw;
   margin: 0 auto;
   margin-bottom: 10px;
-  background-image: url('./images/illustration-contact-form.svg');
   background-position: right 68%;
   background-repeat: no-repeat;
 }

@@ -7,7 +7,9 @@ const options = document.querySelector('.options');
 const portfolio = document.querySelector('#portfolio-link');
 const about = document.querySelector('#about-link');
 const contact = document.querySelector('#contact-link');
-const main = document.querySelector('main');
+
+const body = document.querySelector('body');
+const mobileModal = document.querySelector('mobile-modal');
 
 closeIcon.style.display = 'none';
 options.style.display = 'none';
@@ -319,7 +321,8 @@ function displayModal() {
         if (mobileModalContainer.classList.contains('hide-modal')) {
           mobileModalContainer.classList.remove('hide-modal');
           mobileModalContainer.innerHTML = mobileModalTemplate;
-          main.style.display = 'none';
+          mobileModal.style.backdropFilter = 'blur(16px)';
+          body.style.opacity ='0.9';
         }
         closeMobilePopup();
       }
