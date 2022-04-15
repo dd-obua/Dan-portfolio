@@ -7,6 +7,7 @@ const options = document.querySelector('.options');
 const portfolio = document.querySelector('#portfolio-link');
 const about = document.querySelector('#about-link');
 const contact = document.querySelector('#contact-link');
+const main = document.querySelector('main');
 
 closeIcon.style.display = 'none';
 options.style.display = 'none';
@@ -272,19 +273,19 @@ function displayModal() {
           return null;
         });
         const modalTemplate = `
-            <div class="modal">
-      <div class="desktop-modal-content">
-        <i class="close-modal-icon fa-solid fa-xmark fa-xl"></i>
-        <img src="${storyInfo.storyDetails.featuredImage}" class="img" alt="" />
-        <div class="below">
-          <h3> ${storyInfo.storyDetails.name} </h3>
-            <a href="${storyInfo.storyDetails.liveVersionLink}">See Live <img src="./images/live.svg" alt="" /></a>
-            <a href="${storyInfo.storyDetails.sourceLink}">See Source <img src="./images/source.svg" alt="" /></a>
-        </div>
-        <ul> ${technologies} </ul>
-        <p> ${storyInfo.storyDetails.description} </p>
-      </div>
-    </div>
+          <div class="modal">
+            <div class="desktop-modal-content">
+              <i class="close-modal-icon fa-solid fa-xmark fa-xl"></i>
+              <img src="${storyInfo.storyDetails.featuredImage}" class="img" alt="" />
+              <div class="below">
+                <h3> ${storyInfo.storyDetails.name} </h3>
+                  <a href="${storyInfo.storyDetails.liveVersionLink}">See Live <img src="./images/live.svg" alt="" /></a>
+                  <a href="${storyInfo.storyDetails.sourceLink}">See Source <img src="./images/source.svg" alt="" /></a>
+              </div>
+              <ul> ${technologies} </ul>
+              <p> ${storyInfo.storyDetails.description} </p>
+            </div>
+          </div>
         `;
         if (modalContainer.classList.contains('hide-modal')) {
           modalContainer.classList.remove('hide-modal');
@@ -318,6 +319,7 @@ function displayModal() {
         if (mobileModalContainer.classList.contains('hide-modal')) {
           mobileModalContainer.classList.remove('hide-modal');
           mobileModalContainer.innerHTML = mobileModalTemplate;
+          main.style.display='none';
         }
         closeMobilePopup();
       }
