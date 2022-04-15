@@ -319,7 +319,7 @@ function displayModal() {
         if (mobileModalContainer.classList.contains('hide-modal')) {
           mobileModalContainer.classList.remove('hide-modal');
           mobileModalContainer.innerHTML = mobileModalTemplate;
-          main.style.display='none';
+          main.style.display = 'none';
         }
         closeMobilePopup();
       }
