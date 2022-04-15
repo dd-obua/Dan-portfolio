@@ -79,7 +79,7 @@ nav {
   font-family: 'Inter', sans-serif;
   color: #172b4d;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   background: #fff;
   position: fixed;
   top: 0;
@@ -92,7 +92,7 @@ nav {
 .mobile-modal img {
   display: block;
   margin: 0 auto;
-  width: 90%;
+  width: 90vw;
   padding-top: 5%;
 }
 
@@ -140,7 +140,7 @@ footer h3 {
 .close-mobile-modal-icon {
   color: #fff;
   position: absolute;
-  top: 10%;
+  top: 9%;
   right: 11.4%;
   z-index: 999;
 }
@@ -293,7 +293,7 @@ footer h3 {
 
 .story {
   width: 90%;
-  height: 474px;
+  height: 500px;
   margin: 0 auto 24px auto;
   border-radius: 8px;
   background: #ebf0ee;
@@ -311,7 +311,7 @@ footer h3 {
 }
 
 .story .content h2 {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
   color: #3a4a42;
@@ -351,8 +351,8 @@ footer h3 {
 .story .content {
   border: 1px solid #ebf0ee;
   border-radius: 8px;
-  height: 222px;
-  margin-top: 252px;
+  height: 238px;
+  margin-top: 262px;
   background: #fff;
 }
 
