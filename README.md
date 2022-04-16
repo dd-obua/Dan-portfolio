@@ -27,6 +27,9 @@
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/denis-daniel-obua-99024a229/)
 
 ## 🤝 Contributing
+Contributors to this project include:
+- Lembani Sakala
+- Emmanuel Mensah
 
 Contributions, issues, and feature requests are welcome!
 
