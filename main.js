@@ -313,7 +313,7 @@
                     </div>
                   
                   </div>
-              </div>
+              </div>  
             </div>
           `;
           if (mobileModalContainer.classList.contains('hide-modal')) {
