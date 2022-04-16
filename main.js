@@ -7,6 +7,8 @@ const options = document.querySelector('.options');
 const portfolio = document.querySelector('#portfolio-link');
 const about = document.querySelector('#about-link');
 const contact = document.querySelector('#contact-link');
+const body = document.querySelector('body');
+
 
 closeIcon.style.display = 'none';
 options.style.display = 'none';
@@ -320,6 +322,7 @@ function displayModal() {
         if (mobileModalContainer.classList.contains('hide-modal')) {
           mobileModalContainer.classList.remove('hide-modal');
           mobileModalContainer.innerHTML = mobileModalTemplate;
+          body.style.backdropFilter = 'blur(16px)';
         }
         closeMobilePopup();
       }
