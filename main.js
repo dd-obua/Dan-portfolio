@@ -328,4 +328,5 @@ displayModal();
 
 const contactForm = document.forms.contactForm
 const input = contactForm.email;
+const error = document.querySelector('.form-error');
 
