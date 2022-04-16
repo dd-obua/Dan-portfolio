@@ -322,7 +322,7 @@ function displayModal() {
           mobileModalContainer.classList.remove('hide-modal');
           mobileModalContainer.innerHTML = mobileModalTemplate;
           mobileModal.style.backdropFilter = 'blur(16px)';
-          body.style.opacity = '0.9';
+          body.style.opacity ='0.9';
         }
         closeMobilePopup();
       }
