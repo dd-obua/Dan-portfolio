@@ -8,9 +8,6 @@
   const about = document.querySelector('#about-link');
   const contact = document.querySelector('#contact-link');
 
-  const body = document.querySelector('body');
-  const mobileModal = document.querySelector('mobile-modal');
-
   closeIcon.style.display = 'none';
   options.style.display = 'none';
 
