@@ -325,3 +325,7 @@ function displayModal() {
 }
 
 displayModal();
+
+const contactForm = document.forms.contactForm
+const input = contactForm.email;
+
