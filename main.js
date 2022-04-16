@@ -374,7 +374,7 @@ myForm.addEventListener('change', () => {
 
 const getData = () => {
   const localFormData = JSON.parse(localStorage.getItem('formData'));
-  nameInput.value = localFormData.fullname;
+  nameInput.value = localFormData.fullName;
   emailInput.value = localFormData.email;
   messageInput.value = localFormData.message;
 };
