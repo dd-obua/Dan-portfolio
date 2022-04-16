@@ -79,10 +79,11 @@ nav {
   font-family: 'Inter', sans-serif;
   color: #172b4d;
   width: 100%;
-  height: 100vh;
+  height: 83vh;
   margin: 0 auto;
   background: #fff;
   position: fixed;
+  z-index: 200;
   top: 0;
   right: 0;
   bottom: 0;
@@ -95,7 +96,6 @@ nav {
   margin: 5% auto 0 auto;
   width: 90%;
   transform: none;
-
 }
 
 footer h3 {
@@ -142,7 +142,7 @@ footer h3 {
 .close-mobile-modal-icon {
   color: #fff;
   position: absolute;
-  top: 6%;
+  top: 7%;
   right: 11.4%;
   z-index: 999;
 }
