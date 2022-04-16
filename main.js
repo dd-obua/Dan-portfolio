@@ -349,3 +349,34 @@ contForm.addEventListener('submit', (e) => {
   e.preventDefault();
   validateEmail();
 });
+
+const myForm = document.forms.contactForm;
+const nameInput = myForm.fullName;
+const emailInput = myForm.emailAddress;
+const messageInput = myForm.message;
+
+const formData = {
+  fullName: '',
+  emailAddress: '',
+  message: '',
+};
+
+const setData = () => {
+  localStorage.setItem('formData', JSON.stringify(formData));
+};
+
+myForm.addEventListener('change', () => {
+  formData.fullName = nameInput.value;
+  formData.email = emailInput.value;
+  formData.message = messageInput.value;
+  setData();
+});
+
+const getData = () => {
+  const localFormData = JSON.parse(localStorage.getItem('formData'));
+  nameInput.value = localFormData.fullName;
+  emailInput.value = localFormData.email;
+  messageInput.value = localFormData.message;
+};
+
+getData();
