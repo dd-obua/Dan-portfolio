@@ -371,3 +371,12 @@ myForm.addEventListener('change', () => {
   formData.message = messageInput.value;
   setData();
 });
+
+const getData = () => {
+  const localFormData = JSON.parse(localStorage.getItem('formData'));
+  nameInput.value = localFormData.fullname;
+  emailInput.value = localFormData.email;
+  messageInput.value = localFormData.message;
+};
+
+getData();
