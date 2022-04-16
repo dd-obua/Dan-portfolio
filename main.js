@@ -318,7 +318,6 @@ function displayModal() {
           mobileModalContainer.classList.remove('hide-modal');
           mobileModalContainer.innerHTML = mobileModalTemplate;
         }
-        closeMobilePopup();
       }
     });
   });
