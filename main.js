@@ -350,10 +350,10 @@ contForm.addEventListener('submit', (e) => {
   validateEmail();
 });
 
-const myForm = document.forms.contactForm
-const nameInput = myForm.fullName
-const emailInput = myForm.emailAddress
-const messageInput = myForm.message
+const myForm = document.forms.contactForm;
+const nameInput = myForm.fullName;
+const emailInput = myForm.emailAddress;
+const messageInput = myForm.message;
 
 const formData = {
   fullName: '',
