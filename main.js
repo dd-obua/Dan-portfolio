@@ -326,24 +326,26 @@ function displayModal() {
 
 displayModal();
 
-const contactForm = document.forms.contactForm
-const input = contactForm.email;
+const contForm = document.forms.contactForm;
+const input = contForm.emailAddress;
 const error = document.querySelector('.form-error');
 
 function validateEmail() {
   if (input.value !== input.value.toLowerCase()) {
     input.focus();
-    error.style.fontFamily = 'Inter';
+    error.style.fontFamily = 'Inter, sans-serif';
     error.style.fontSize = '17';
     error.style.color = '#ff6163';
+    error.style.marginLeft = '5%';
+    error.style.fontWeight = 'bold';
     error.innerText = 'Email should be lowercase.';
     return false;
   }
-  contactForm.submit();
+  contForm.submit();
   return true;
 }
 
-contactForm.addEventListener('submit', (e) => {
+contForm.addEventListener('submit', (e) => {
   e.preventDefault();
   validateEmail();
 });

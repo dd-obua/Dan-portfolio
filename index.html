@@ -189,11 +189,7 @@
           to chat please get in touch.
         </h3>
 
-        <form
-          action="https://formspree.io/f/mvolqjjv"
-          method="post"
-          class="contact-form" name="contactForm"
-        >
+        <form action="https://formspree.io/f/mvolqjjv" method="post" class="contact-form" name="contactForm">
           <ul>
             <li>
               <input
@@ -204,7 +200,7 @@
               />
             </li>
             <li>
-              <input type="email" placeholder="Email address" required />
+              <input type="email" name="emailAddress" placeholder="Email address" required />
             </li>
             <li>
               <textarea
@@ -220,7 +216,7 @@
               <span class="form-error"></span>
             </li>
             <li>
-              <button type="submit">Get in touch</button>
+              <button type="submit" id="submitInfo">Get in touch</button>
             </li>
           </ul>
         </form>
