@@ -360,3 +360,14 @@ const formData = {
   emailAddress: '',
   message: '',
 };
+
+const setData = () => {
+  localStorage.setItem('formData', JSON.stringify(formData));
+};
+
+myForm.addEventListener('change', () => {
+  formData.fullName = nameInput.value;
+  formData.email = emailInput.value;
+  formData.message = messageInput.value;
+  setData();
+});
