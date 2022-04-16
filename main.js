@@ -349,3 +349,8 @@ contForm.addEventListener('submit', (e) => {
   e.preventDefault();
   validateEmail();
 });
+
+const myForm = document.forms.contactForm
+const nameInput = myForm.fullName
+const emailInput = myForm.emailAddress
+const messageInput = myForm.message
