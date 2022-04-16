@@ -330,3 +330,20 @@ const contactForm = document.forms.contactForm
 const input = contactForm.email;
 const error = document.querySelector('.form-error');
 
+function validateEmail() {
+  if (input.value !== input.value.toLowerCase()) {
+    input.focus();
+    error.style.fontFamily = 'Inter';
+    error.style.fontSize = '17';
+    error.style.color = '#ff6163';
+    error.innerText = 'Email should be lowercase.';
+    return false;
+  }
+  contactForm.submit();
+  return true;
+}
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  validateEmail();
+});
