@@ -354,3 +354,9 @@ const myForm = document.forms.contactForm
 const nameInput = myForm.fullName
 const emailInput = myForm.emailAddress
 const messageInput = myForm.message
+
+const formData = {
+  fullName: '',
+  emailAddress: '',
+  message: '',
+};
